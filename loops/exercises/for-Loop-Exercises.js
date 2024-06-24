@@ -50,6 +50,10 @@ for (let i = 0; i < arr.length; i++) {
 
 //b. 
 
+for (let i = launchCode.length-1; i>=0; i--){
+  console.log(launchCode[i])
+};
+
 
 
 /*Exercise #3:Construct a for loop that sorts the array [2, 3, 13, 18, -5, 38, -10, 11, 0, 104] into two new arrays:
@@ -57,7 +61,14 @@ for (let i = 0; i < arr.length; i++) {
   b. Print the arrays to confirm the results. */
 
   let otherArr = [2, 3, 13, 18, -5, 38, -10, 11, 0, 104];
-  let evens = [], odds = [];
+  let evens = [];
+  let odds = [];
+
+  for (let i = 0; i <= otherArr.length; i++){
+    if(otherArr[i]%2 === 0){
+      evens.push(otherArr[i])
+    } else {odds.push(otherArr[i])}
+  } 
 
 console.log(evens);
 console.log(odds);
