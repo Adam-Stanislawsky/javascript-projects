@@ -20,6 +20,25 @@ function findMinValue(arr){
 
 //Your function here...
 
+function sortArr(arr) {
+  let sortedArray = [];
+    while (arr.length > 0) {
+    sortedArray.push(findMinValue(arr));
+    arr.splice(arr.indexOf(findMinValue(arr)),1);
+    }
+    return sortedArray;
+}
+
+/*function sortArr(){
+  let sortedArray = [];
+  for (let i = 0; 0 < arr.length; i++){
+    let min = (arr.splice(arr.indexOf(findMinValue(arr)), 1))
+    sortedArray.push(min);
+  }
+  return sortedArray
+}/*
+
+
 /* BONUS MISSION: Refactor your sorting function to use recursion below:
  */
 
