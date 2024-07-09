@@ -4,6 +4,7 @@
 // Code your fuelRequired function here:
 
 
+
 // The pre-selected crew is in the array at the end of this file.
 // Feel free to add, remove, or switch crew members as you see fit.
 
